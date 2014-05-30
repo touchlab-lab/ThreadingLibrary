@@ -68,4 +68,8 @@ public abstract class BaseOp implements Runnable
 		return intent;
 	}
 
+    public static boolean isSuccess(Intent intent)
+    {
+        return intent.getBooleanExtra(SUCCESS, false);
+    }
 }
